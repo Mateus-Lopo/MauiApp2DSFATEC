@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Image Source="dotnet_bot.png"/>
+
+            <Button Text="Bem vindo" x:Name="btnBem" Clicked="btnBem_Clicked"/>
+            <Button Text="Fotinha" x:Name="btnFoto" Clicked="btnFoto_Clicked"/>
+            <Button Text="Calculadora" x:Name="btncalc" Clicked="btncalc_Clicked"/>
+            <Button Text="Abrir Página por código" x:Name="btnCodigo" Clicked="btnCodigo_Clicked"/>
+            <Button Text="Abrir Página do XAML" x:Name="btnXaml" Clicked="btnXaml_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

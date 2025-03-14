@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.NewPage3"
+             Title="NewPage3">
+    <VerticalStackLayout>
+        <Entry 
+            x:Name="txtAlcool"
+            Placeholder="Informe o preço do etanol"
+            Keyboard="Numeric" 
+            ReturnType="Next"
+            />
+        <Entry 
+            x:Name="txtGasolina"
+            Placeholder="Informe o preço da gasolina"
+            Keyboard="Numeric" 
+            ReturnType="Send"
+            Completed="txtGasolina_Completed"
+            />
+        <Button Text="Calcular" x:Name="btnCalc" Clicked="btnCalc_Clicked"/>
+        <Image 
+            x:Name="imgResultado"
+            />
+        
+        <Label x:Name="lblResultado"/>
+        <Button Text="Voltar" x:Name="btnVoltar" Clicked="btnVoltar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

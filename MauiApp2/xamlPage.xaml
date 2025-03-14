@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.xamlPage"
+             Title="xamlPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Bem vindo"
+            VerticalOptions="Start" 
+            HorizontalOptions="End" />
+        <Label
+            Text="ao .NET MAUI"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            />
+        <Button Text="Voltar" x:Name="btnVoltar2" Clicked="btnVoltar2_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
