@@ -15,7 +15,7 @@
             <Button Text="Calculadora" x:Name="btncalc" Clicked="btncalc_Clicked"/>
             <Button Text="Abrir Página por código" x:Name="btnCodigo" Clicked="btnCodigo_Clicked"/>
             <Button Text="Abrir Página do XAML" x:Name="btnXaml" Clicked="btnXaml_Clicked"/>
-
+            
         </VerticalStackLayout>
     </ScrollView>
 
