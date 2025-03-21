@@ -26,17 +26,25 @@ public partial class NewPage3 : ContentPage
 
 		if(double.TryParse(etanol, out double precoAlcool) && double.TryParse(gaso, out double presoGaso))
 		{
-			double conta = precoAlcool / presoGaso;
-
-			if(conta <= 0.7)
+			if (presoGaso == 0)
 			{
-				lblResultado.Text = "Abasteça com Etanol";
-				imgResultado.Source = "etanol.png";
+				lblResultado.Text = "Los tomates dicem que NO!";
+				imgResultado.Source = "bravo.jpg";
 			}
 			else
 			{
-				lblResultado.Text = "Abasteça com gasolina";
-				imgResultado.Source = "gasolina.png";
+				double conta = precoAlcool / presoGaso;
+
+				if (conta <= 0.7)
+				{
+					lblResultado.Text = "Abasteça com Etanol";
+					imgResultado.Source = "etanol.png";
+				}
+				else
+				{
+					lblResultado.Text = "Abasteça com gasolina";
+					imgResultado.Source = "gasolina.png";
+				}
 			}
 		}
 		else
